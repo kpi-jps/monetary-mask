@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        input {
+            font-size: 1.25rem;
+            padding: 5px;
+        }
+        #container {
+            margin: 20px auto;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            width: 450px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+        <h2>Testing MonetaryMask</h2>
+        <label>
+          Value $:  
+          <input type="text" value ="" id="input">
+        </label> 
+    </div>
+  </body>
+  <script src="MonetaryMask.js"></script>
+  <script>  
+    const mask = new MonetaryMask("input", ",")
+    console.log(mask)
+  </script>
+</html>
